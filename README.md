@@ -23,19 +23,20 @@ This web app predicts house prices using a trained **Ridge Regression** model. I
 
 ## 📊 Model Performance
 
-After evaluating several machine learning models, **Ridge Regression** was selected due to its performance on both training and test data.
+After evaluating several machine learning models, **Ridge Regression** was selected due to its robust performance and generalization capabilities on both training and unseen test data.
 
 ### 🔍 Ridge Regression Evaluation:
 
 #### Train Performance
-- **MAE**: 677,028.69  
-- **R² Score**: 0.704  
+- **Mean Absolute Error (MAE)**: ₹677,028.69  
+- **R² Score**: 0.704  
 
 #### Test Performance
-- **MAE**: 987,143.74  
-- **R² Score**: 0.650  
+- **Mean Absolute Error (MAE)**: ₹987,143.74  
+    * *Context:* This indicates that, on average, the model's predictions deviated by approximately **₹9.87 Lakhs** from the actual house prices. Given that the average house price within our dataset was **₹4,766,729.25** (approximately ₹47.67 Lakhs), this MAE translates to an average absolute percentage error of roughly **20.71%**.
+- **R² Score**: 0.650  
 
-> ⚠️ **Note**: While results aren't perfect, the dataset may be a limiting factor. Nonetheless, the model performs reliably for general use cases.
+> ⚠️ **Note**: While the model's performance metrics suggest room for improvement, particularly in reducing the MAE for precise valuations, the dataset's inherent complexities and potential limitations are recognized. Nonetheless, the model performs reliably for general trend analysis and initial estimation use cases.
 
 ---
 
@@ -44,6 +45,23 @@ After evaluating several machine learning models, **Ridge Regression** was selec
 Here’s a preview of the app interface:
 
 ![App Screenshot](images/screenshot.png)
+
+---
+## 📊 Dataset Source
+
+This project uses the [Housing Price Prediction dataset from Kaggle](https://www.kaggle.com/datasets/harishkumardatalab/housing-price-prediction).  
+The dataset includes house characteristics such as:
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Amenities like air conditioning, parking, basement, etc.
+
+---
+
+## 📌 Disclaimer
+
+> This is an educational project. The predicted values are **estimated** and **not meant for real-world financial decision-making**. Use the app for learning and experimentation only.
 
 ---
 
